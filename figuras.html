@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Figuras Geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <meta charset="UTF-8">
+  <title>Figuras Geométricas | Curso Práctico de JavaScript en Platzi</title>
+  <link rel="stylesheet" href="figuras.css">
 </head>
 <body>
-  <h1>Figuras geométricas</h1>
+  <header>
+    <h1>Figuras geométricas</h1>
+    <p>Este es el primer taller del curso práctico de JS en Platzi</p>
+  </header>
+
+  <div class="container">
+    <section class="cuadrado">
+      <h2 class="title">Cuadrado</h2>
+      <form class="form">
+        <input type="number" id="InputCuadrado" placeholder="Lado de tu cuadrado" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+        <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+      </form>
+      <div class="result">
+        <div id="perimetroCuadrado"></div>
+        <div id="areaCuadrado"></div>
+      </div>
+    </section>
+
+    <section class="triangulo">
+      <h2 class="title">Triángulo</h2>
+      <form class="form">
+        <input type="text" id="InputTriangulo" placeholder="(lado1,lado2,base)" />
+        <button type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
+        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+        <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+      </form>
+      <div class="result">
+        <div id="alturaTriangulo"></div>
+        <div id="perimetroTriangulo"></div>
+        <div id="areaTriangulo"></div>
+      </div>
+    </section>
+
+    <section class="circulo">
+      <h2 class="title">Círculo</h2>
+      <form class="form">
+        <input type="number" id="InputCirculo" placeholder="Radio de tu círculo" />
+        <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+        <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+      </form>
+      <div class="result">
+        <div id="perimetroCirculo"></div>
+        <div id="areaCirculo"></div>
+      </div>
+    </section>
+  </div>
+
   <script src="./figuras.js"></script>
 </body>
 </html>
