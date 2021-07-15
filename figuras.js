@@ -20,40 +20,40 @@ const perimetroCirculo = radio => diametroCirculo(radio) * Math.PI;
 const areaCirculo = radio => radio * radio * Math.PI;
 
 // Funciones onclick
-const calcularPerimetroCuadrado = () => setMessageResult(
+const calcularPerimetroCuadrado = () => printMessageResult(
         'perimetroCuadrado',
         `El perímetro es ${perimetroCuadrado(getLadoCuadrado())}`
 );
 
-const calcularAreaCuadrado = () => setMessageResult(
+const calcularAreaCuadrado = () => printMessageResult(
         'areaCuadrado',
         `El área es ${areaCuadrado(getLadoCuadrado())}`
 );
 
 const calcularAlturaTriangulo = () => {
   const lados = getLadosTriangulo();
-  setMessageResult(
+  printMessageResult(
           'alturaTriangulo',
           `La altura es ${alturaTriangulo(areaTriangulo(...lados), lados[2])}`
   )
 }
 
-const calcularPerimetroTriangulo = () => setMessageResult(
+const calcularPerimetroTriangulo = () => printMessageResult(
         'perimetroTriangulo',
         `El perímetro es ${perimetroTriangulo(...getLadosTriangulo())}`
 );
 
-const calcularAreaTriangulo = () => setMessageResult(
+const calcularAreaTriangulo = () => printMessageResult(
           'areaTriangulo',
           `El área es ${areaTriangulo(...getLadosTriangulo())}`
 );
 
-const calcularPerimetroCirculo = () => setMessageResult(
+const calcularPerimetroCirculo = () => printMessageResult(
         'perimetroCirculo',
         `El perímetro es ${perimetroCirculo(getRadio())}`
 );
 
-const calcularAreaCirculo = () => setMessageResult(
+const calcularAreaCirculo = () => printMessageResult(
         'areaCirculo',
         `El área es ${areaCirculo(getRadio())}`
 );
@@ -73,6 +73,6 @@ function getRadio() {
   return +(document.getElementById('InputCirculo').value);
 }
 
-function setMessageResult(id, message) {
+function printMessageResult(id, message) {
   document.getElementById(id).innerText = message;
 }
