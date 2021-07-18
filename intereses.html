@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Know your Investment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Know your Investment</h1>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2 class="title">Investment</h2>
+      <form class="form">
+        <input type="number" id="initial-amount" placeholder="Investment amount" />
+        <input type="number" id="annual-interest" placeholder="Annual interest (on %)" />
+        <input type="number" id="years" placeholder="Time lapse in years" />
+        <label for="interest-type">Kind of interest</label>
+        <select id="interest-type">
+          <option value="simple">Simple</option>
+          <option value="compound">Compound</option>
+        </select>
+        <button type="button" onclick="onClickHandler()">Calculate</button>
+        <button type="reset" onclick="resetHandler()">Reset</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="intereses.js"></script>
+</body>
+</html>

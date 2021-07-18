@@ -19,6 +19,7 @@ header > p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: start;
 }
 
 .container > section {
@@ -47,7 +48,8 @@ header > p {
   flex-direction: column;
   justify-content: space-around;
 }
-.form > input {
+.form > input,
+.form > select {
   margin-bottom: 1rem;
   padding: .5rem;
 }
@@ -58,4 +60,28 @@ header > p {
   color: white;
   border-radius: 5px;
   border: 0;
+}
+
+#table-container {
+  width: 100%;
+  padding: 2rem;
+  text-align: right;
+}
+#table-container > table {
+  background-color: #292d3e;
+  width: 100%;
+  border-collapse: collapse;
+}
+#table-container > table th{
+  background-color: #1a1d28;
+}
+#table-container > table th,
+#table-container > table td{
+  padding: .5rem;
+}
+#table-container > table > tbody > tr:nth-child(even) {
+  background-color: #353b52;
+}
+#table-container > table > tbody > tr:hover {
+  background-color: #1a1d28;
 }
